@@ -1,5 +1,6 @@
 import java.util.List;
 
+
 public class Postulante {
     private String nombre;
     private String rut;
@@ -55,5 +56,21 @@ public class Postulante {
 
     public void setExperiencia(int experiencia) {
         this.experiencia = experiencia;
+    }
+
+
+    // metodos para agregar competencias:
+    // (son tres métodos para que así se cumpla la sobrecarga de métodos dependiendo de qué necesitará elprograma)
+    public void agregarCompetencia(String nombreCompetencia, String nivelCompetencia) {
+        Competencia nuevaCompetencia = new Competencia(nombreCompetencia, nivelCompetencia);
+        this.competencias.add(nuevaCompetencia);
+    }
+
+    public void agregarCompetencia(Competencia competencia) {
+        this.competencias.add(competencia);
+    }
+
+    public void agregarCompetencia(List<Competencia> nuevasCompetencias) {
+        this.competencias.addAll(nuevasCompetencias);
     }
 }
