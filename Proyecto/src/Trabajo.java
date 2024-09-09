@@ -5,13 +5,15 @@ public class Trabajo {
     private String descripcion;
     private List<Competencia> competencias;
     private int experiencia;
+    private int IdTrabajo;
 
     // Constructor
-    public Trabajo(String nombre, String descripcion, List<Competencia> competencias, int experiencia) {
+    public Trabajo(String nombre, String descripcion, List<Competencia> competencias, int experiencia, int IdTrabajo) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.competencias = competencias;
         this.experiencia = experiencia;
+        this.IdTrabajo = IdTrabajo;
     }
 
     // Getters y Setters
@@ -45,5 +47,27 @@ public class Trabajo {
 
     public void setExperiencia(int experiencia) {
         this.experiencia = experiencia;
+    }
+
+    public void setIdTrabajo(int IdTrabajo) {
+        this.IdTrabajo = IdTrabajo; }
+    public int getIdTrabajo() {
+        return IdTrabajo; }
+
+
+    // metodos para agregar competencias:
+    // (son tres métodos para que así se cumpla la sobrecarga de métodos dependiendo de qué necesitará elprograma)
+
+
+    public void agregarCompetencia(String nombreCompetencia, String nivelCompetencia) {
+        Competencia nuevaCompetencia = new Competencia(nombreCompetencia, nivelCompetencia);
+        this.competencias.add(nuevaCompetencia);
+    }
+    public void agregarCompetencia(Competencia competencia) {
+        this.competencias.add(competencia);
+    }
+    public void agregarCompetencia(String nombreCompetencia) {
+        Competencia nuevaCompetencia = new Competencia(nombreCompetencia, "indefinido");
+        this.competencias.add(nuevaCompetencia);
     }
 }
