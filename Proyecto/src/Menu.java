@@ -107,8 +107,9 @@ public class Menu {
         for (int i = 0; i < cantCompetencias; i++) {
             System.out.print("Ingrese el nombre de la competencia: ");
             String nombreCompetencia = scanner.nextLine();
-            System.out.print("Ingrese el nivel de la competencia: ");
-            String nivelCompetencia = scanner.nextLine();
+
+            // Pedir el nivel de competencia de forma segura
+            String nivelCompetencia = pedirNivelCompetencia();
             listaCompetencias.add(new Competencia(nombreCompetencia, nivelCompetencia));
         }
 
@@ -143,11 +144,11 @@ public class Menu {
         for (int i = 0; i < cantCompetencias; i++) {
             System.out.print("Ingrese el nombre de la competencia: ");
             String nombreCompetencia = scanner.nextLine();
-            System.out.print("Ingrese el nivel de la competencia: ");
-            String nivelCompetencia = scanner.nextLine();
+
+            // Pedir el nivel de competencia de forma segura
+            String nivelCompetencia = pedirNivelCompetencia();
             listaCompetenciasT.add(new Competencia(nombreCompetencia, nivelCompetencia));
         }
-
         bolsa.agregarTrabajo(new Trabajo(nombreTrabajo, descripcionTrabajo, listaCompetenciasT, anioExperienciaMinT, IdTrabajo));
         System.out.println("Trabajo agregado.");
     }
@@ -189,7 +190,7 @@ public class Menu {
             System.out.println("Trabajo eliminado.");
         } else {
             System.out.println("No se encontró un trabajo con ese ID.");
-        }
+        }   
     }
 
 }
