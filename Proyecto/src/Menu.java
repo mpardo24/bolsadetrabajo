@@ -25,13 +25,15 @@ public class Menu {
             System.out.println("6. Eliminar Trabajo");
             System.out.println("7. Mostrar Postulante por RUT");
             System.out.println("8. Mostrar Trabajo por ID");
-            System.out.println("9. Salir");
+            System.out.println("9. Editar Competencias de Postulante");
+            System.out.println("10. Eliminar Competencias de Postulante");
+            System.out.println("11. Hacer Match con Trabajo por ID");
+            System.out.println("12. Salir");
             System.out.print("Seleccione una opción: ");
 
             input = scanner.nextLine();
 
-            if (input.equals("1") || input.equals("2") || input.equals("3") || input.equals("4") || input.equals("5") || input.equals("6") || input.equals("7") || input.equals("8") || input.equals("9")) {
-
+            if (input.matches("[1-9]|10|11|12")) {
                 opcion = Integer.parseInt(input);
 
                 switch (opcion) {
@@ -60,13 +62,23 @@ public class Menu {
                         mostrarTrabajoPorID();
                         break;
                     case 9:
+                        editarCompetenciaPostulante();
+                        break;
+                    case 10:
+                        eliminarCompetenciaPostulante();
+                        break;
+                    case 11:
+                        hacerMatchConTrabajo();
+                        break;
+                    case 12:
                         System.out.println("Saliendo del sistema...");
+                        bolsa.guardarDatos();  // Guardar los datos antes de salir
                         break;
                 }
             } else {
-                System.out.println("Ingrese un valor numérico entre el 1 al 9.");
+                System.out.println("Ingrese un valor numérico entre el 1 al 12.");
             }
-        } while (opcion != 9);
+        } while (opcion != 12);
     }
 
     private void agregarPostulante() {
