@@ -192,5 +192,113 @@ public class Menu {
             System.out.println("No se encontró un trabajo con ese ID.");
         }   
     }
+    
+    // Método para editar competencias de un postulante
+    private void editarCompetenciaPostulante() {
+        System.out.print("Ingrese el RUT del postulante para editar competencias: ");
+        String rut = scanner.nextLine();
+        Postulante postulante = bolsa.getPostulantePorRut(rut);
+
+        if (postulante != null) {
+            System.out.println("Competencias del postulante:");
+            for (int i = 0; i < postulante.getCompetencias().size(); i++) {
+                Competencia competencia = postulante.getCompetencias().get(i);
+                System.out.println((i + 1) + ". " + competencia.getNombre() + " (Nivel: " + competencia.getNivel() + ")");
+            }
+
+            System.out.print("Seleccione el número de la competencia a editar: ");
+            int indice = scanner.nextInt() - 1;
+            scanner.nextLine();
+
+            if (indice < 0 || indice >= postulante.getCompetencias().size()) {
+                System.out.println("Índice fuera de rango.");
+                return;
+            }
+
+            Competencia competenciaSeleccionada = postulante.getCompetencias().get(indice);
+
+            System.out.print("Ingrese el nuevo nombre de la competencia: ");
+            String nuevoNombre = scanner.nextLine();
+            System.out.print("Ingrese el nuevo nivel de la competencia: ");
+            String nuevoNivel = scanner.nextLine();
+
+            competenciaSeleccionada.setNombre(nuevoNombre);
+            competenciaSeleccionada.setNivel(nuevoNivel);
+
+            System.out.println("Competencia actualizada correctamente.");
+        } else {
+            System.out.println("No se encontró un postulante con ese RUT.");
+        }
+    }
+
+    // Método para eliminar competencias de un postulante
+    private void eliminarCompetenciaPostulante() {
+        System.out.print("Ingrese el RUT del postulante para eliminar competencias: ");
+        String rut = scanner.nextLine();
+        Postulante postulante = bolsa.getPostulantePorRut(rut);
+
+        if (postulante != null) {
+            System.out.println("Competencias del postulante:");
+            for (int i = 0; i < postulante.getCompetencias().size(); i++) {
+                Competencia competencia = postulante.getCompetencias().get(i);
+                System.out.println((i + 1) + ". " + competencia.getNombre() + " (Nivel: " + competencia.getNivel() + ")");
+            }
+
+            System.out.print("Seleccione el número de la competencia a eliminar: ");
+            int indice = scanner.nextInt() - 1;
+            scanner.nextLine(); // Consumir la línea restante
+
+            if (indice < 0 || indice >= postulante.getCompetencias().size()) {
+                System.out.println("Índice fuera de rango.");
+                return;
+            }
+
+            // Eliminar la competencia seleccionada
+            postulante.getCompetencias().remove(indice);
+            System.out.println("Competencia eliminada correctamente.");
+        } else {
+            System.out.println("No se encontró un postulante con ese RUT.");
+        }
+    }
+    private void hacerMatchConTrabajo() {
+        System.out.print("Ingrese el ID del trabajo para hacer el match: ");
+        int IdTrabajo = Integer.parseInt(scanner.nextLine());
+        bolsa.hacerMatch(IdTrabajo);
+    }
+
+    private String pedirNivelCompetencia() {
+        String nivelCompetencia = "";
+        int opcion;
+
+        do {
+            System.out.println("Seleccione el nivel de la competencia:");
+            System.out.println("1) Principiante");
+            System.out.println("2) Intermedio");
+            System.out.println("3) Experto");
+            System.out.print("Ingrese una opción (1-3): ");
+            String input = scanner.nextLine();
+
+            if (input.matches("[1-3]")) {
+                opcion = Integer.parseInt(input);
+
+                switch (opcion) {
+                    case 1:
+                        nivelCompetencia = "principiante";
+                        break;
+                    case 2:
+                        nivelCompetencia = "intermedio";
+                        break;
+                    case 3:
+                        nivelCompetencia = "experto";
+                        break;
+                }
+            } else {
+                System.out.println("Opción inválida. Por favor, ingrese un número del 1 al 3.");
+                opcion = -1; // Repetir el ciclo
+            }
+        } while (opcion == -1);
+
+        return nivelCompetencia;
+    }
 
 }
