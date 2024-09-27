@@ -70,4 +70,21 @@ public class Trabajo {
         Competencia nuevaCompetencia = new Competencia(nombreCompetencia, "indefinido");
         this.competencias.add(nuevaCompetencia);
     }
+
+    // Método para editar una competencia
+    public void editarCompetencia(int index, String nuevoNombre, String nuevoNivel) {
+        if (index >= 0 && index < competencias.size()) {
+            Competencia competencia = competencias.get(index);
+            competencia.setNombre(nuevoNombre);
+            competencia.setNivel(nuevoNivel);
+        }
+    }
+
+    // Método para eliminar una competencia
+    public void eliminarCompetencia(int index) {
+        if (index >= 0 && index < competencias.size()) {
+            competencias.remove(index);
+        }
+    }
+
 }
