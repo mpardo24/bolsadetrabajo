@@ -157,8 +157,9 @@ public class BolsaTrabajo {
 
     // Mostrar trabajos
     public void mostrarTrabajos() {
+        System.out.println("Trabajos ingresados en la base da datos:");
         for (Trabajo trabajo : trabajos.values()) {
-            System.out.println(trabajo.getNombre());
+            System.out.println("  Nombre trabajo: "+trabajo.getNombre()+"\n    Id trabajo: "+trabajo.getIdTrabajo());
         }
     }
 
@@ -198,4 +199,28 @@ public class BolsaTrabajo {
     public Trabajo getTrabajoPorID(int IdTrabajo) {
         return trabajos.get(IdTrabajo);
     }
+
+    // Método auxiliar para comparar los niveles de competencia
+    private boolean nivelCompetenciaEsSuficiente(String nivelRequerido, String nivelPostulante) {
+        int nivelRequeridoInt = convertirNivelAEntero(nivelRequerido);
+        int nivelPostulanteInt = convertirNivelAEntero(nivelPostulante);
+
+        // El nivel del postulante debe ser mayor o igual al nivel requerido
+        return nivelPostulanteInt >= nivelRequeridoInt;
+    }
+
+    // Método auxiliar para convertir el nivel de competencia a un valor entero
+    private int convertirNivelAEntero(String nivel) {
+        switch (nivel.toLowerCase()) {
+            case "principiante":
+                return 1;
+            case "intermedio":
+                return 2;
+            case "experto":
+                return 3;
+            default:
+                return 0;
+        }
+    }
+
 }
