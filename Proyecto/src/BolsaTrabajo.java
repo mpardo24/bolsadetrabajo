@@ -1,9 +1,118 @@
-import java.util.HashMap;
+import java.io.*;
+import java.util.*;
 
 public class BolsaTrabajo {
     private HashMap<String, Postulante> postulantes = new HashMap<>();
     private HashMap<Integer, Trabajo> trabajos = new HashMap<>();
 
+    // Cargar los datos desde archivos CSV
+    public void cargarDatos() {
+        cargarPostulantes();
+        cargarTrabajos();
+    }
+    
+    // Guardar los datos en archivos CSV
+    public void guardarDatos() {
+        guardarPostulantes();
+        guardarTrabajos();
+    }
+
+    // Cargar postulantes desde CSV
+    private void cargarPostulantes() {
+        File file = new File("postulantes.csv");
+        if (!file.exists()) {
+            System.out.println("Archivo postulantes.csv no encontrado, se creará al guardar los datos.");
+            return;
+        }
+
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                String[] datos = linea.split(",");
+                String nombre = datos[0];
+                String rut = datos[1];
+                String correo = datos[2];
+                int experiencia = Integer.parseInt(datos[3]);
+
+                // Convertir competencias desde el CSV
+                List<Competencia> competencias = new ArrayList<>();
+                for (int i = 4; i < datos.length; i += 2) {
+                    competencias.add(new Competencia(datos[i], datos[i + 1]));
+                }
+
+                Postulante postulante = new Postulante(nombre, rut, correo, competencias, experiencia);
+                postulantes.put(rut, postulante);
+            }
+            System.out.println("Postulantes cargados correctamente.");
+        } catch (IOException e) {
+            System.out.println("Error al cargar postulantes: " + e.getMessage());
+        }
+    }
+
+    // Cargar trabajos desde CSV
+    private void cargarTrabajos() {
+        File file = new File("trabajos.csv");
+        if (!file.exists()) {
+            System.out.println("Archivo trabajos.csv no encontrado, se creará al guardar los datos.");
+            return;
+        }
+
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                String[] datos = linea.split(",");
+                String nombre = datos[0];
+                String descripcion = datos[1];
+                int experienciaMin = Integer.parseInt(datos[2]);
+                int idTrabajo = Integer.parseInt(datos[3]);
+
+                // Convertir competencias desde el CSV
+                List<Competencia> competencias = new ArrayList<>();
+                for (int i = 4; i < datos.length; i += 2) {
+                    competencias.add(new Competencia(datos[i], datos[i + 1]));
+                }
+
+                Trabajo trabajo = new Trabajo(nombre, descripcion, competencias, experienciaMin, idTrabajo);
+                trabajos.put(idTrabajo, trabajo);
+            }
+            System.out.println("Trabajos cargados correctamente.");
+        } catch (IOException e) {
+            System.out.println("Error al cargar trabajos: " + e.getMessage());
+        }
+    }
+
+    // Guardar postulantes en CSV
+    private void guardarPostulantes() {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("postulantes.csv"))) {
+            for (Postulante postulante : postulantes.values()) {
+                bw.write(postulante.getNombre() + "," + postulante.getRut() + "," + postulante.getCorreo() + "," + postulante.getExperiencia());
+                for (Competencia competencia : postulante.getCompetencias()) {
+                    bw.write("," + competencia.getNombre() + "," + competencia.getNivel());
+                }
+                bw.newLine();
+            }
+            System.out.println("Postulantes guardados correctamente.");
+        } catch (IOException e) {
+            System.out.println("Error al guardar postulantes: " + e.getMessage());
+        }
+    }
+
+    // Guardar trabajos en CSV
+    private void guardarTrabajos() {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("trabajos.csv"))) {
+            for (Trabajo trabajo : trabajos.values()) {
+                bw.write(trabajo.getNombre() + "," + trabajo.getDescripcion() + "," + trabajo.getExperiencia() + "," + trabajo.getIdTrabajo());
+                for (Competencia competencia : trabajo.getCompetencias()) {
+                    bw.write("," + competencia.getNombre() + "," + competencia.getNivel());
+                }
+                bw.newLine();
+            }
+            System.out.println("Trabajos guardados correctamente.");
+        } catch (IOException e) {
+            System.out.println("Error al guardar trabajos: " + e.getMessage());
+        }
+    }
+    
     // Agregar postulante
     public void agregarPostulante(Postulante postulante) {
         postulantes.put(postulante.getRut(), postulante);
