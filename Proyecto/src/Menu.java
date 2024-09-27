@@ -28,12 +28,13 @@ public class Menu {
             System.out.println("9. Editar Competencias de Postulante");
             System.out.println("10. Eliminar Competencias de Postulante");
             System.out.println("11. Hacer Match con Trabajo por ID");
-            System.out.println("12. Salir");
+            System.out.println("12. Hacer Match con Postulante por RUT");
+            System.out.println("13. Salir");
             System.out.print("Seleccione una opción: ");
 
             input = scanner.nextLine();
 
-            if (input.matches("[1-9]|10|11|12")) {
+            if (input.matches("[1-9]|10|11|12|13")) {
                 opcion = Integer.parseInt(input);
 
                 switch (opcion) {
@@ -71,14 +72,17 @@ public class Menu {
                         hacerMatchConTrabajo();
                         break;
                     case 12:
+                        hacerMatchConPostulante();
+                        break;
+                    case 13:
                         System.out.println("Saliendo del sistema...");
                         bolsa.guardarDatos();  // Guardar los datos antes de salir
                         break;
                 }
             } else {
-                System.out.println("Ingrese un valor numérico entre el 1 al 12.");
+                System.out.println("Ingrese un valor numérico entre el 1 al 13.");
             }
-        } while (opcion != 12);
+        } while (opcion != 13);
     }
 
     private void agregarPostulante() {
@@ -238,11 +242,13 @@ public class Menu {
         Postulante postulante = bolsa.getPostulantePorRut(rut);
 
         if (postulante != null) {
+            List<Competencia> competencias = postulante.getCompetencias();
             System.out.println("Competencias del postulante:");
-            for (int i = 0; i < postulante.getCompetencias().size(); i++) {
-                Competencia competencia = postulante.getCompetencias().get(i);
+            for (int i = 0; i < competencias.size(); i++) {
+                Competencia competencia = competencias.get(i);
                 System.out.println((i + 1) + ". " + competencia.getNombre() + " (Nivel: " + competencia.getNivel() + ")");
             }
+
 
             System.out.print("Seleccione el número de la competencia a eliminar: ");
             int indice = scanner.nextInt() - 1;
@@ -256,6 +262,12 @@ public class Menu {
             // Eliminar la competencia seleccionada
             postulante.getCompetencias().remove(indice);
             System.out.println("Competencia eliminada correctamente.");
+
+            // Verificar si el postulante tiene 0 competencias y eliminarlo si es así
+            if (competencias.isEmpty()) {
+                bolsa.eliminarPostulante(postulante);
+                System.out.println("El postulante no tiene más competencias y ha sido eliminado.");
+            }
         } else {
             System.out.println("No se encontró un postulante con ese RUT.");
         }
@@ -266,6 +278,12 @@ public class Menu {
         bolsa.hacerMatch(IdTrabajo);
     }
 
+    private void hacerMatchConPostulante(){
+        System.out.println("Ingrese el rut del postulante para hacer el match: ");
+        String rutBuscado = scanner.nextLine();
+        bolsa.hacerMatchInverso(rutBuscado);
+    }
+    
     private String pedirNivelCompetencia() {
         String nivelCompetencia = "";
         int opcion;
