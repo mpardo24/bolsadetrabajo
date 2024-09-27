@@ -223,4 +223,108 @@ public class BolsaTrabajo {
         }
     }
 
+    public void hacerMatch(int IdTrabajo) {
+        Trabajo trabajo = getTrabajoPorID(IdTrabajo);
+        if (trabajo == null) {
+            System.out.println("No se encontró un trabajo con el ID: " + IdTrabajo);
+            return;
+        }
+
+        System.out.println("Buscando postulantes para el trabajo: " + trabajo.getNombre());
+
+        for (Postulante postulante : postulantes.values()) {
+            boolean cumpleRequisitos = true;
+
+            // Verificar años de experiencia mínimos
+            if (postulante.getExperiencia() < trabajo.getExperiencia()) {
+                cumpleRequisitos = false;
+            }
+
+            // Verificar competencias
+            for (Competencia competenciaRequerida : trabajo.getCompetencias()) {
+                boolean competenciaCumplida = false;
+
+                for (Competencia competenciaPostulante : postulante.getCompetencias()) {
+                    if (competenciaRequerida.getNombre().equalsIgnoreCase(competenciaPostulante.getNombre())) {
+                        // Verificar nivel de competencia
+                        if (nivelCompetenciaEsSuficiente(competenciaRequerida.getNivel(), competenciaPostulante.getNivel())) {
+                            competenciaCumplida = true;
+                            break;
+                        }
+                    }
+                }
+
+                // Si alguna competencia no se cumple, el postulante no cumple con los requisitos
+                if (!competenciaCumplida) {
+                    cumpleRequisitos = false;
+                    break;
+                }
+            }
+
+            // Mostrar si el postulante cumple o no
+            if (cumpleRequisitos) {
+                System.out.println("El postulante " + postulante.getNombre() + " cumple con los requisitos para el trabajo. Para contactarlo mandar correo a "+ postulante.getCorreo());
+            }
+        }
+    }
+
+    public void hacerMatchInverso(String rut) {
+        Postulante postulante = getPostulantePorRut(rut);
+
+        // Verificar si el postulante existe
+        if (postulante == null) {
+            System.out.println("No se encontró un postulante con el RUT: " + rut);
+            return;
+        }
+
+        System.out.println("Buscando trabajos para el postulante: " + postulante.getNombre());
+        boolean foundMatch = false;
+
+        // Iterar sobre todos los trabajos disponibles
+        for (Trabajo trabajo : trabajos.values()) {
+            boolean cumpleRequisitos = true;
+
+            // Verificar si el postulante cumple con la experiencia mínima
+            if (postulante.getExperiencia() < trabajo.getExperiencia()) {
+                cumpleRequisitos = false;
+            }
+
+            // Verificar si el postulante cumple con las competencias requeridas por el trabajo
+            for (Competencia competenciaRequerida : trabajo.getCompetencias()) {
+                boolean competenciaCumplida = false;
+
+                for (Competencia competenciaPostulante : postulante.getCompetencias()) {
+                    if (competenciaRequerida.getNombre().equalsIgnoreCase(competenciaPostulante.getNombre())) {
+                        // Verificar nivel de competencia
+                        if (nivelCompetenciaEsSuficiente(competenciaRequerida.getNivel(), competenciaPostulante.getNivel())) {
+                            competenciaCumplida = true;
+                            break;
+                        }
+                    }
+                }
+
+                // Si alguna competencia no se cumple, el postulante no cumple con los requisitos para este trabajo
+                if (!competenciaCumplida) {
+                    cumpleRequisitos = false;
+                    break;
+                }
+            }
+
+            // Si el postulante cumple con todos los requisitos del trabajo
+            if (cumpleRequisitos) {
+                foundMatch = true;
+                System.out.println("El postulante " + postulante.getNombre() + " puede postular al trabajo: " + trabajo.getNombre());
+                System.out.println("Descripción: " + trabajo.getDescripcion());
+                System.out.println("Años de experiencia mínima requerida: " + trabajo.getExperiencia());
+                System.out.println("ID del Trabajo: " + trabajo.getIdTrabajo());
+                System.out.println("---------------------------");
+            }
+        }
+
+        // Si no se encontró ningún trabajo para el que el postulante cumpla con los requisitos
+        if (!foundMatch) {
+            System.out.println("Postulante no cumple con requerimientos mínimos para ningún trabajo.");
+        }
+    }
+
 }
