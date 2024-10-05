@@ -1,4 +1,4 @@
-# Proyecto Bolsa de Trabajo
+# Proyecto Bolsa de Trabajo (TERMINAL)
 
 Este proyecto consiste en una bolsa de trabajo automatizada desarrollada como parte de la asignatura de Programación Avanzada en la Pontificia Universidad Católica de Valparaíso. El sistema tiene como objetivo facilitar la conexión entre postulantes y ofertas laborales, mejorando la empleabilidad mediante un proceso de selección automatizado basado en competencias y experiencias.
 
