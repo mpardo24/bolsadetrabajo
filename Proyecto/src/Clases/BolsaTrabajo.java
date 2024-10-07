@@ -383,10 +383,10 @@ public class BolsaTrabajo {
             // Escribir los datos de los trabajos
             writer.write("\n=== Reporte de Trabajos ===\n");
             for (Trabajo trabajo : trabajos.values()) {
-                writer.write("Nombre del Clases.Trabajo: " + trabajo.getNombre() + "\n");
+                writer.write("Nombre del Trabajo: " + trabajo.getNombre() + "\n");
                 writer.write("Descripción: " + trabajo.getDescripcion() + "\n");
                 writer.write("Años de Experiencia Requeridos: " + trabajo.getExperiencia() + "\n");
-                writer.write("ID del Clases.Trabajo: " + trabajo.getIdTrabajo() + "\n");
+                writer.write("ID del Trabajo: " + trabajo.getIdTrabajo() + "\n");
                 writer.write("Competencias Requeridas:\n");
                 for (Competencia competencia : trabajo.getCompetencias()) {
                     writer.write(" - " + competencia.getNombre() + " (" + competencia.getNivel() + ")\n");
