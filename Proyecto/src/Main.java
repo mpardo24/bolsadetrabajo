@@ -1,5 +1,4 @@
-import java.util.List;
-import java.util.ArrayList;
+import Clases.BolsaTrabajo;
 // en nuestro main solo utilizamos la clase menu para crear el menu como tal
 // y luego ejecutarlo
 public class Main {
