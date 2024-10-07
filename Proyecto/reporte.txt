@@ -1,0 +1,762 @@
+=== Reporte de Postulantes ===
+Nombre: Camila García
+RUT: 20.720.724-9
+Correo: camilagarcía@example.com
+Años de Experiencia: 9
+Competencias:
+ - Problem-Solving (Intermedio)
+ - Data Analysis (Experto)
+ - Communication (Experto)
+ - SQL (Experto)
+ - PHP (Intermedio)
+-------------------------------
+Nombre: Catalina Pérez
+RUT: 20.141.751-7
+Correo: catalinapérez@example.com
+Años de Experiencia: 2
+Competencias:
+ - PHP (Experto)
+ - Python (Principiante)
+ - Java (Principiante)
+-------------------------------
+Nombre: Rodrigo Fernández
+RUT: 17.118.244-7
+Correo: rodrigofernández@example.com
+Años de Experiencia: 5
+Competencias:
+ - SQL (Experto)
+ - HTML (Principiante)
+ - C++ (Principiante)
+ - Python (Principiante)
+-------------------------------
+Nombre: Ana Ramírez
+RUT: 16.651.285-2
+Correo: anaramírez@example.com
+Años de Experiencia: 8
+Competencias:
+ - Python (Experto)
+ - HTML (Principiante)
+ - C++ (Experto)
+ - PHP (Principiante)
+-------------------------------
+Nombre: Francisco Molina
+RUT: 16.547.457-8
+Correo: franciscomolina@example.com
+Años de Experiencia: 8
+Competencias:
+ - Java (Experto)
+ - PHP (Experto)
+ - Python (Principiante)
+ - C++ (Intermedio)
+ - Data Analysis (Experto)
+-------------------------------
+Nombre: Andrea Bustamante
+RUT: 15.963.488-7
+Correo: andreabustamante@example.com
+Años de Experiencia: 1
+Competencias:
+ - Communication (Principiante)
+ - Problem-Solving (Intermedio)
+-------------------------------
+Nombre: Lorena González
+RUT: 18.470.983-0
+Correo: lorenagonzález@example.com
+Años de Experiencia: 1
+Competencias:
+ - Problem-Solving (Intermedio)
+ - HTML (Experto)
+ - SQL (Intermedio)
+ - C++ (Principiante)
+ - Java (Intermedio)
+-------------------------------
+Nombre: Sofía Figueroa
+RUT: 20.328.603-9
+Correo: sofíafigueroa@example.com
+Años de Experiencia: 1
+Competencias:
+ - Java (Intermedio)
+ - Communication (Experto)
+ - Problem-Solving (Principiante)
+-------------------------------
+Nombre: Fernanda Aravena
+RUT: 17.336.602-2
+Correo: fernandaaravena@example.com
+Años de Experiencia: 4
+Competencias:
+ - Python (Principiante)
+ - C++ (Intermedio)
+-------------------------------
+Nombre: Teresa Castro
+RUT: 16.899.766-4
+Correo: teresacastro@example.com
+Años de Experiencia: 4
+Competencias:
+ - SQL (Experto)
+ - Data Analysis (Experto)
+-------------------------------
+Nombre: Javiera Vargas
+RUT: 17.291.494-3
+Correo: javieravargas@example.com
+Años de Experiencia: 7
+Competencias:
+ - Java (Experto)
+ - Problem-Solving (Principiante)
+ - Communication (Intermedio)
+ - Data Analysis (Principiante)
+ - Python (Experto)
+-------------------------------
+Nombre: Vicente Carrasco
+RUT: 20.295.880-8
+Correo: vicentecarrasco@example.com
+Años de Experiencia: 2
+Competencias:
+ - Java (Principiante)
+ - HTML (Experto)
+ - Communication (Experto)
+ - SQL (Intermedio)
+-------------------------------
+Nombre: Elena Salinas
+RUT: 19.242.153-1
+Correo: elenasalinas@example.com
+Años de Experiencia: 3
+Competencias:
+ - Data Analysis (Principiante)
+ - SQL (Intermedio)
+-------------------------------
+Nombre: Juan Rojas
+RUT: 20.352.377-8
+Correo: juanrojas@example.com
+Años de Experiencia: 10
+Competencias:
+ - Java (Intermedio)
+ - Problem-Solving (Principiante)
+ - Python (Principiante)
+ - SQL (Intermedio)
+-------------------------------
+Nombre: Isidora Gutiérrez
+RUT: 16.810.482-3
+Correo: isidoragutiérrez@example.com
+Años de Experiencia: 3
+Competencias:
+ - PHP (Intermedio)
+ - Communication (Intermedio)
+ - SQL (Principiante)
+-------------------------------
+Nombre: Felipe González
+RUT: 17.192.552-8
+Correo: felipegonzález@example.com
+Años de Experiencia: 4
+Competencias:
+ - Communication (Experto)
+ - HTML (Principiante)
+-------------------------------
+Nombre: Daniela Navarro
+RUT: 15.767.189-6
+Correo: danielanavarro@example.com
+Años de Experiencia: 2
+Competencias:
+ - Python (Intermedio)
+ - Data Analysis (Principiante)
+ - PHP (Experto)
+ - Java (Principiante)
+-------------------------------
+Nombre: Tomás Vega
+RUT: 18.109.158-6
+Correo: tomásvega@example.com
+Años de Experiencia: 5
+Competencias:
+ - HTML (Principiante)
+ - SQL (Principiante)
+ - Communication (Intermedio)
+ - Project Management (Experto)
+ - PHP (Experto)
+-------------------------------
+Nombre: Sebastián Castillo
+RUT: 15.160.396-1
+Correo: sebastiáncastillo@example.com
+Años de Experiencia: 6
+Competencias:
+ - PHP (Principiante)
+ - Python (Intermedio)
+ - Communication (Experto)
+-------------------------------
+Nombre: Ignacio Morales
+RUT: 18.563.965-5
+Correo: ignaciomorales@example.com
+Años de Experiencia: 10
+Competencias:
+ - Python (Experto)
+ - Data Analysis (Principiante)
+ - C++ (Principiante)
+ - HTML (Principiante)
+-------------------------------
+Nombre: Martina Rojas
+RUT: 18.625.360-0
+Correo: martinarojas@example.com
+Años de Experiencia: 2
+Competencias:
+ - HTML (Principiante)
+ - PHP (Experto)
+ - SQL (Principiante)
+ - C++ (Experto)
+ - Project Management (Experto)
+-------------------------------
+Nombre: Antonia Martínez
+RUT: 18.160.926-0
+Correo: antoniamartínez@example.com
+Años de Experiencia: 5
+Competencias:
+ - C++ (Intermedio)
+ - PHP (Principiante)
+ - Project Management (Intermedio)
+-------------------------------
+Nombre: Beatriz Sepúlveda
+RUT: 15.893.620-6
+Correo: beatrizsepúlveda@example.com
+Años de Experiencia: 9
+Competencias:
+ - HTML (Intermedio)
+ - Project Management (Intermedio)
+ - Data Analysis (Experto)
+-------------------------------
+Nombre: María Silva
+RUT: 17.985.170-0
+Correo: maríasilva@example.com
+Años de Experiencia: 3
+Competencias:
+ - Project Management (Experto)
+ - SQL (Principiante)
+ - C++ (Principiante)
+ - Python (Experto)
+-------------------------------
+Nombre: Cecilia Ortega
+RUT: 17.794.590-5
+Correo: ceciliaortega@example.com
+Años de Experiencia: 8
+Competencias:
+ - Data Analysis (Principiante)
+ - PHP (Principiante)
+-------------------------------
+Nombre: Pablo Morales
+RUT: 18.376.811-5
+Correo: pablomorales@example.com
+Años de Experiencia: 3
+Competencias:
+ - PHP (Principiante)
+ - Project Management (Principiante)
+-------------------------------
+Nombre: Diego Álvarez
+RUT: 20.227.210-0
+Correo: diegoálvarez@example.com
+Años de Experiencia: 10
+Competencias:
+ - Problem-Solving (Principiante)
+ - Data Analysis (Principiante)
+ - SQL (Intermedio)
+ - Java (Experto)
+-------------------------------
+Nombre: Felipe Torres
+RUT: 15.422.265-7
+Correo: felipetorres@example.com
+Años de Experiencia: 6
+Competencias:
+ - SQL (Experto)
+ - C++ (Experto)
+ - Java (Experto)
+ - Data Analysis (Experto)
+ - Communication (Intermedio)
+-------------------------------
+Nombre: Lucas Silva
+RUT: 15.165.260-4
+Correo: lucassilva@example.com
+Años de Experiencia: 4
+Competencias:
+ - Communication (Intermedio)
+ - Project Management (Intermedio)
+-------------------------------
+Nombre: Claudio Fuentes
+RUT: 17.594.284-3
+Correo: claudiofuentes@example.com
+Años de Experiencia: 6
+Competencias:
+ - Communication (Experto)
+ - C++ (Experto)
+ - PHP (Principiante)
+ - Java (Principiante)
+-------------------------------
+Nombre: Matías Soto
+RUT: 19.779.711-4
+Correo: matíassoto@example.com
+Años de Experiencia: 4
+Competencias:
+ - SQL (Principiante)
+ - Problem-Solving (Intermedio)
+-------------------------------
+Nombre: Carlos Vidal
+RUT: 19.609.373-5
+Correo: carlosvidal@example.com
+Años de Experiencia: 4
+Competencias:
+ - SQL (Intermedio)
+ - Project Management (Experto)
+ - HTML (Principiante)
+ - Problem-Solving (Experto)
+ - PHP (Principiante)
+-------------------------------
+Nombre: Cristian Pérez
+RUT: 16.131.719-6
+Correo: cristianpérez@example.com
+Años de Experiencia: 7
+Competencias:
+ - Python (Experto)
+ - Java (Intermedio)
+-------------------------------
+Nombre: Francisca Espinoza
+RUT: 15.335.436-8
+Correo: franciscaespinoza@example.com
+Años de Experiencia: 8
+Competencias:
+ - Java (Experto)
+ - Project Management (Intermedio)
+ - C++ (Experto)
+ - Communication (Experto)
+-------------------------------
+Nombre: Gabriel Sepúlveda
+RUT: 16.179.858-9
+Correo: gabrielsepúlveda@example.com
+Años de Experiencia: 1
+Competencias:
+ - Project Management (Principiante)
+ - SQL (Principiante)
+ - Data Analysis (Experto)
+-------------------------------
+Nombre: Valentina Castro
+RUT: 15.146.961-3
+Correo: valentinacastro@example.com
+Años de Experiencia: 2
+Competencias:
+ - Communication (Intermedio)
+ - C++ (Principiante)
+ - Python (Intermedio)
+-------------------------------
+Nombre: Camila López
+RUT: 16.148.188-2
+Correo: camilalópez@example.com
+Años de Experiencia: 8
+Competencias:
+ - Problem-Solving (Principiante)
+ - Project Management (Experto)
+ - SQL (Experto)
+ - Data Analysis (Principiante)
+ - Java (Intermedio)
+-------------------------------
+Nombre: Alberto Pizarro
+RUT: 17.540.948-2
+Correo: albertopizarro@example.com
+Años de Experiencia: 2
+Competencias:
+ - Problem-Solving (Intermedio)
+ - SQL (Principiante)
+ - Data Analysis (Experto)
+ - Java (Principiante)
+ - Project Management (Principiante)
+-------------------------------
+Nombre: Ricardo Medina
+RUT: 19.252.423-8
+Correo: ricardomedina@example.com
+Años de Experiencia: 10
+Competencias:
+ - Project Management (Principiante)
+ - Problem-Solving (Experto)
+ - Communication (Principiante)
+ - HTML (Intermedio)
+ - PHP (Intermedio)
+-------------------------------
+Nombre: Joaquín Herrera
+RUT: 20.683.426-9
+Correo: joaquínherrera@example.com
+Años de Experiencia: 6
+Competencias:
+ - Data Analysis (Principiante)
+ - Python (Principiante)
+ - HTML (Principiante)
+ - Project Management (Intermedio)
+-------------------------------
+
+=== Reporte de Trabajos ===
+Nombre del Trabajo: Desarrollador Web
+Descripción: Desarrollo y mantenimiento de sitios web.
+Años de Experiencia Requeridos: 3
+ID del Trabajo: 1
+Competencias Requeridas:
+ - PHP (Principiante)
+ - SQL (Intermedio)
+ - Data Analysis (Principiante)
+ - Java (Principiante)
+ - Project Management (Experto)
+-------------------------------
+Nombre del Trabajo: Analista de Datos
+Descripción: Analizar grandes volúmenes de datos y generar reportes.
+Años de Experiencia Requeridos: 1
+ID del Trabajo: 2
+Competencias Requeridas:
+ - SQL (Experto)
+ - C++ (Principiante)
+-------------------------------
+Nombre del Trabajo: Ingeniero de Software
+Descripción: Diseño y desarrollo de software a medida.
+Años de Experiencia Requeridos: 1
+ID del Trabajo: 3
+Competencias Requeridas:
+ - C++ (Experto)
+ - SQL (Experto)
+ - PHP (Intermedio)
+-------------------------------
+Nombre del Trabajo: Especialista en Ciberseguridad
+Descripción: Implementar medidas de seguridad en sistemas y redes.
+Años de Experiencia Requeridos: 3
+ID del Trabajo: 4
+Competencias Requeridas:
+ - Communication (Principiante)
+ - Java (Intermedio)
+ - Project Management (Experto)
+-------------------------------
+Nombre del Trabajo: Gerente de Proyecto
+Descripción: Planificar y gestionar proyectos de tecnología.
+Años de Experiencia Requeridos: 2
+ID del Trabajo: 5
+Competencias Requeridas:
+ - Python (Principiante)
+ - Problem-Solving (Principiante)
+-------------------------------
+Nombre del Trabajo: Diseñador Gráfico
+Descripción: Diseño creativo de interfaces gráficas.
+Años de Experiencia Requeridos: 3
+ID del Trabajo: 6
+Competencias Requeridas:
+ - Data Analysis (Intermedio)
+ - Problem-Solving (Experto)
+ - SQL (Principiante)
+ - Java (Experto)
+-------------------------------
+Nombre del Trabajo: Administrador de Redes
+Descripción: Configuración y mantenimiento de redes internas.
+Años de Experiencia Requeridos: 4
+ID del Trabajo: 7
+Competencias Requeridas:
+ - Python (Experto)
+ - PHP (Intermedio)
+ - SQL (Principiante)
+ - Data Analysis (Principiante)
+ - HTML (Experto)
+-------------------------------
+Nombre del Trabajo: Especialista en Marketing Digital
+Descripción: Diseñar estrategias de marketing digital efectivas.
+Años de Experiencia Requeridos: 5
+ID del Trabajo: 8
+Competencias Requeridas:
+ - Communication (Intermedio)
+ - Python (Intermedio)
+ - HTML (Principiante)
+ - PHP (Intermedio)
+ - Project Management (Intermedio)
+-------------------------------
+Nombre del Trabajo: Ingeniero DevOps
+Descripción: Automatización de procesos y despliegue continuo.
+Años de Experiencia Requeridos: 3
+ID del Trabajo: 9
+Competencias Requeridas:
+ - SQL (Intermedio)
+ - Project Management (Principiante)
+ - Python (Experto)
+ - C++ (Intermedio)
+ - Java (Intermedio)
+-------------------------------
+Nombre del Trabajo: Administrador de Bases de Datos
+Descripción: Gestionar y mantener bases de datos empresariales.
+Años de Experiencia Requeridos: 3
+ID del Trabajo: 10
+Competencias Requeridas:
+ - SQL (Intermedio)
+ - Java (Experto)
+ - Data Analysis (Principiante)
+ - Communication (Intermedio)
+ - Python (Principiante)
+-------------------------------
+Nombre del Trabajo: Asesor Financiero
+Descripción: Asesoramiento en temas financieros y de inversión.
+Años de Experiencia Requeridos: 4
+ID del Trabajo: 11
+Competencias Requeridas:
+ - Data Analysis (Principiante)
+ - Communication (Intermedio)
+ - HTML (Experto)
+ - Java (Principiante)
+ - Project Management (Experto)
+-------------------------------
+Nombre del Trabajo: Especialista en Recursos Humanos
+Descripción: Gestión de talento y recursos humanos.
+Años de Experiencia Requeridos: 2
+ID del Trabajo: 12
+Competencias Requeridas:
+ - Data Analysis (Experto)
+ - PHP (Intermedio)
+ - C++ (Experto)
+-------------------------------
+Nombre del Trabajo: Desarrollador de Aplicaciones Móviles
+Descripción: Desarrollar aplicaciones móviles para Android e iOS.
+Años de Experiencia Requeridos: 2
+ID del Trabajo: 13
+Competencias Requeridas:
+ - Communication (Principiante)
+ - PHP (Intermedio)
+ - HTML (Experto)
+ - Java (Intermedio)
+ - SQL (Principiante)
+-------------------------------
+Nombre del Trabajo: Consultor de Negocios
+Descripción: Consultoría y asesoría de negocios a empresas.
+Años de Experiencia Requeridos: 3
+ID del Trabajo: 14
+Competencias Requeridas:
+ - Java (Principiante)
+ - Data Analysis (Experto)
+ - PHP (Principiante)
+ - Communication (Experto)
+ - Python (Experto)
+-------------------------------
+Nombre del Trabajo: Desarrollador de Videojuegos
+Descripción: Creación y desarrollo de videojuegos interactivos.
+Años de Experiencia Requeridos: 2
+ID del Trabajo: 15
+Competencias Requeridas:
+ - Project Management (Intermedio)
+ - PHP (Intermedio)
+ - Python (Experto)
+ - HTML (Principiante)
+-------------------------------
+Nombre del Trabajo: Administrador de Sistemas
+Descripción: Administrar sistemas operativos y servidores.
+Años de Experiencia Requeridos: 2
+ID del Trabajo: 16
+Competencias Requeridas:
+ - HTML (Principiante)
+ - Data Analysis (Intermedio)
+ - SQL (Intermedio)
+ - Java (Experto)
+-------------------------------
+Nombre del Trabajo: Diseñador UX/UI
+Descripción: Diseñar experiencias de usuario intuitivas y atractivas.
+Años de Experiencia Requeridos: 3
+ID del Trabajo: 17
+Competencias Requeridas:
+ - PHP (Intermedio)
+ - SQL (Experto)
+ - Java (Experto)
+-------------------------------
+Nombre del Trabajo: Analista de Calidad
+Descripción: Control de calidad y aseguramiento de software.
+Años de Experiencia Requeridos: 1
+ID del Trabajo: 18
+Competencias Requeridas:
+ - C++ (Principiante)
+ - Python (Principiante)
+-------------------------------
+Nombre del Trabajo: Desarrollador Full Stack
+Descripción: Desarrollo completo de aplicaciones frontend y backend.
+Años de Experiencia Requeridos: 4
+ID del Trabajo: 19
+Competencias Requeridas:
+ - SQL (Intermedio)
+ - Data Analysis (Experto)
+ - Communication (Principiante)
+ - HTML (Intermedio)
+ - Project Management (Principiante)
+-------------------------------
+Nombre del Trabajo: Analista de Soporte Técnico
+Descripción: Brindar soporte técnico y soluciones a problemas.
+Años de Experiencia Requeridos: 1
+ID del Trabajo: 20
+Competencias Requeridas:
+ - SQL (Principiante)
+ - Java (Principiante)
+-------------------------------
+Nombre del Trabajo: Especialista en Redes Sociales
+Descripción: Creación y gestión de contenido para redes sociales.
+Años de Experiencia Requeridos: 3
+ID del Trabajo: 21
+Competencias Requeridas:
+ - Data Analysis (Experto)
+ - Problem-Solving (Experto)
+ - Python (Experto)
+-------------------------------
+Nombre del Trabajo: Ingeniero en Software
+Descripción: Desarrollo de software a nivel empresarial.
+Años de Experiencia Requeridos: 4
+ID del Trabajo: 22
+Competencias Requeridas:
+ - C++ (Intermedio)
+ - Problem-Solving (Intermedio)
+-------------------------------
+Nombre del Trabajo: Analista Financiero
+Descripción: Análisis financiero y elaboración de reportes.
+Años de Experiencia Requeridos: 2
+ID del Trabajo: 23
+Competencias Requeridas:
+ - Java (Intermedio)
+ - Communication (Experto)
+ - Problem-Solving (Experto)
+-------------------------------
+Nombre del Trabajo: Especialista en SEO
+Descripción: Optimización de motores de búsqueda para páginas web.
+Años de Experiencia Requeridos: 5
+ID del Trabajo: 24
+Competencias Requeridas:
+ - Java (Experto)
+ - Problem-Solving (Principiante)
+-------------------------------
+Nombre del Trabajo: Gerente de Producto
+Descripción: Planificación y ejecución de estrategias de producto.
+Años de Experiencia Requeridos: 2
+ID del Trabajo: 25
+Competencias Requeridas:
+ - Java (Principiante)
+ - C++ (Principiante)
+ - Problem-Solving (Experto)
+ - Data Analysis (Intermedio)
+-------------------------------
+Nombre del Trabajo: Desarrollador Backend
+Descripción: Desarrollo de sistemas backend robustos.
+Años de Experiencia Requeridos: 4
+ID del Trabajo: 26
+Competencias Requeridas:
+ - SQL (Principiante)
+ - Python (Principiante)
+-------------------------------
+Nombre del Trabajo: Asesor de Ventas
+Descripción: Asesoría y atención a clientes en procesos de venta.
+Años de Experiencia Requeridos: 3
+ID del Trabajo: 27
+Competencias Requeridas:
+ - Java (Intermedio)
+ - Project Management (Intermedio)
+ - Data Analysis (Principiante)
+-------------------------------
+Nombre del Trabajo: Especialista en Atención al Cliente
+Descripción: Gestión de atención y resolución de problemas de clientes.
+Años de Experiencia Requeridos: 4
+ID del Trabajo: 28
+Competencias Requeridas:
+ - Java (Experto)
+ - Python (Principiante)
+-------------------------------
+Nombre del Trabajo: Consultor de Recursos Humanos
+Descripción: Consultoría en procesos de recursos humanos y contratación.
+Años de Experiencia Requeridos: 1
+ID del Trabajo: 29
+Competencias Requeridas:
+ - PHP (Experto)
+ - Communication (Experto)
+ - Python (Intermedio)
+ - Project Management (Intermedio)
+ - Java (Principiante)
+-------------------------------
+Nombre del Trabajo: Analista de Sistemas
+Descripción: Análisis y diseño de sistemas informáticos.
+Años de Experiencia Requeridos: 2
+ID del Trabajo: 30
+Competencias Requeridas:
+ - Java (Principiante)
+ - Problem-Solving (Experto)
+ - PHP (Intermedio)
+ - C++ (Experto)
+-------------------------------
+Nombre del Trabajo: Ingeniero de QA
+Descripción: Aseguramiento de la calidad de productos de software.
+Años de Experiencia Requeridos: 5
+ID del Trabajo: 31
+Competencias Requeridas:
+ - PHP (Experto)
+ - Project Management (Principiante)
+ - SQL (Principiante)
+ - Communication (Intermedio)
+-------------------------------
+Nombre del Trabajo: Especialista en Marketing de Contenidos
+Descripción: Creación de estrategias de marketing basadas en contenido.
+Años de Experiencia Requeridos: 4
+ID del Trabajo: 32
+Competencias Requeridas:
+ - Java (Principiante)
+ - Python (Experto)
+ - Problem-Solving (Intermedio)
+ - SQL (Principiante)
+-------------------------------
+Nombre del Trabajo: Técnico en Soporte de TI
+Descripción: Soporte técnico y resolución de problemas de TI.
+Años de Experiencia Requeridos: 1
+ID del Trabajo: 33
+Competencias Requeridas:
+ - Problem-Solving (Intermedio)
+ - C++ (Principiante)
+ - HTML (Intermedio)
+-------------------------------
+Nombre del Trabajo: Desarrollador Frontend
+Descripción: Desarrollo de interfaces de usuario atractivas y funcionales.
+Años de Experiencia Requeridos: 4
+ID del Trabajo: 34
+Competencias Requeridas:
+ - Data Analysis (Intermedio)
+ - Python (Principiante)
+ - Project Management (Principiante)
+-------------------------------
+Nombre del Trabajo: Gerente de Cuentas
+Descripción: Gestión y mantenimiento de cuentas de clientes clave.
+Años de Experiencia Requeridos: 4
+ID del Trabajo: 35
+Competencias Requeridas:
+ - Problem-Solving (Experto)
+ - PHP (Experto)
+-------------------------------
+Nombre del Trabajo: Especialista en E-commerce
+Descripción: Implementación de estrategias de comercio electrónico.
+Años de Experiencia Requeridos: 2
+ID del Trabajo: 36
+Competencias Requeridas:
+ - Problem-Solving (Principiante)
+ - Data Analysis (Principiante)
+ - Python (Principiante)
+-------------------------------
+Nombre del Trabajo: Analista de Negocios
+Descripción: Análisis y evaluación de procesos de negocio.
+Años de Experiencia Requeridos: 1
+ID del Trabajo: 37
+Competencias Requeridas:
+ - HTML (Intermedio)
+ - Communication (Experto)
+ - Problem-Solving (Principiante)
+-------------------------------
+Nombre del Trabajo: Desarrollador de Chatbots
+Descripción: Desarrollo y programación de chatbots para atención al cliente.
+Años de Experiencia Requeridos: 3
+ID del Trabajo: 38
+Competencias Requeridas:
+ - Problem-Solving (Experto)
+ - Python (Experto)
+-------------------------------
+Nombre del Trabajo: Especialista en Logística
+Descripción: Gestión y optimización de procesos logísticos.
+Años de Experiencia Requeridos: 1
+ID del Trabajo: 39
+Competencias Requeridas:
+ - Python (Principiante)
+ - HTML (Intermedio)
+ - C++ (Experto)
+-------------------------------
+Nombre del Trabajo: Ingeniero de Software Embedded
+Descripción: Desarrollo de software para sistemas embebidos.
+Años de Experiencia Requeridos: 4
+ID del Trabajo: 40
+Competencias Requeridas:
+ - C++ (Intermedio)
+ - Python (Principiante)
+-------------------------------
